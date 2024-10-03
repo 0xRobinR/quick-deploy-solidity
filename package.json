@@ -14,6 +14,7 @@
     "@types/chai": "^4.2.0",
     "@types/mocha": ">=9.1.0",
     "chai": "^4.2.0",
+    "dotenv": "^16.4.5",
     "ethers": "^6.4.0",
     "hardhat": "^2.22.9",
     "hardhat-gas-reporter": "^1.0.8",
@@ -29,10 +30,10 @@
     "test:quicktoken": "hardhat test test/QuickTokenTest.ts",
     "deploy:quicktoken": "hardhat ignition deploy ignition/modules/QuickToken.ts --parameters ignition/modules/QuikcTokenParameter.json",
     "deploy:help": "node -e \"console.log('Usage: yarn deploy --network=<network_name>')\"",
-    "verify": "hardhat ignition verify"
+    "verify": "hardhat ignition verify",
+    "visualize": "hardhat ignition visualize"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.2",
-    "dotenv": "^16.4.5"
+    "@openzeppelin/contracts": "^5.0.2"
   }
 }
