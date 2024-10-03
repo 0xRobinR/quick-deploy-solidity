@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract QuickToken is ERC20, Ownable {
-    constructor() ERC20("QuickToken", "QT") Ownable(msg.sender) {
+    constructor(string memory name, string memory symbol) ERC20(name, symbol) Ownable(msg.sender) {
         _mint(msg.sender, 1_000_000 * 10 ** decimals());
     }
 

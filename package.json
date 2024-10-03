@@ -26,7 +26,10 @@
     "test": "hardhat test",
     "compile": "hardhat compile",
     "clean": "hardhat clean",
-    "test:quicktoken": "hardhat test test/QuickTokenTest.ts"
+    "test:quicktoken": "hardhat test test/QuickTokenTest.ts",
+    "deploy:quicktoken": "hardhat ignition deploy ignition/modules/QuickToken.ts --parameters ignition/modules/QuikcTokenParameter.json",
+    "deploy:help": "node -e \"console.log('Usage: yarn deploy --network=<network_name>')\"",
+    "verify": "hardhat ignition verify"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2",
