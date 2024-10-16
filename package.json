@@ -28,7 +28,7 @@
     "compile": "hardhat compile",
     "clean": "hardhat clean",
     "test:quicktoken": "hardhat test test/QuickTokenTest.ts",
-    "deploy:quicktoken": "hardhat ignition deploy ignition/modules/QuickToken.ts --parameters ignition/modules/QuikcTokenParameter.json",
+    "deploy:quicktoken": "hardhat ignition deploy ignition/modules/QuickToken.ts --parameters ignition/dParameters.json",
     "deploy:help": "node -e \"console.log('Usage: yarn deploy --network=<network_name>')\"",
     "verify": "hardhat ignition verify",
     "visualize": "hardhat ignition visualize"

@@ -8,7 +8,7 @@ describe("QuickToken", function () {
     async function deployQuickTokenFixture() {
         const [deployer] = await hre.ethers.getSigners();
         const QuickToken = await hre.ethers.getContractFactory("QuickToken");
-        const quickToken = await QuickToken.deploy();
+        const quickToken = await QuickToken.deploy("test", "test");
         return { quickToken, deployer };
     }
 

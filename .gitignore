@@ -18,3 +18,5 @@ yarn.lock
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/
 deployments.json
+
+/scripts
